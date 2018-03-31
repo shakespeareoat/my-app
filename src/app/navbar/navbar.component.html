@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
+	<div class="container">
+	 <a class="navbar-brand" routerLink="/home">My App</a> <!-- routerLink ให้ path คือ /home นั่นคือ เมื่อคลิกที่นี่ ให้เรียก HomeComponent มาแสดงผล -->
+	 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#homeMenu">
+	 	<span class="navbar-toggler-icon"></span>
+	 </button>
+	 <div class="collapse navbar-collapse" id="homeMenu"></div>
+	 <ul class="navbar-nav ml-auto"> <!-- ml-auto เพื่อให้ ul นั้นชิดขวา -->
+	 	<li class="nav-item">
+	 		<a class="nav-link" routerLink="/memo">สมุดบันทึก</a><!--  ระบุ routerLink ให้ path คือ /about-me นั่นคือ เมื่อคลิกที่นี่ ให้เรียก AboutMeComponent มาแสดงผล -->
+	 	</li>
+	 	<li class="nav-item">
+	 		<a class="nav-link" routerLink="/about-me">ข้อมูลของฉัน</a><!--  ระบุ routerLink ให้ path คือ /about-me นั่นคือ เมื่อคลิกที่นี่ ให้เรียก AboutMeComponent มาแสดงผล -->
+	 	</li>
+	 </ul>			
+	</div> 
+</nav>
