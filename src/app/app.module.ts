@@ -11,6 +11,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpService } from './http.service';
 import { MemoComponent } from './memo/memo.component';
+import { CardComponent } from './card/card.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MemoComponent } from './memo/memo.component';
     NavbarComponent,
     HomeComponent,
     AboutMeComponent,
-    MemoComponent
+    MemoComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

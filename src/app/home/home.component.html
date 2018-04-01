@@ -7,7 +7,7 @@
 <div class="carousel-inner"> <!-- คลาส carousel-inner คือพื้นที่ภายใน carousel -->
 	<div *ngFor="let i of carousel_items; let index = index" 
 	class="carousel-item carousel-img" [ngClass]="{active: index==0}" >
-	<img src="d-block w-100 h-100" [src]="i.img">
+	<img class="d-block w-100 h-100" [src]="i.img">
 	 <div class="carousel-caption d-none d-md-block">
     <h5>{{ i.title }}</h5>
     <p>{{ i.description }}</p>
@@ -26,11 +26,13 @@
 <!-- เป็นปุ่มเดินหน้า (Next) ใช้คลาส carousel-control-next -->
 <!-- ที่ href ระบุ id ของ carousel ที่ต้องการให้ปุ่มทำงาน ในที่นี้คือ homeCarousel -->
 </div>
-</div>
-<div class="row mt-3 mb-3">
+
+<div class="row mt-3 mb-3 mr-3 ml-3">
   <div class="card-columns" >
     <div class="card" *ngFor="let i of cards; let index = index">
+      <a routerLink="/card/{{ index }}"> 
       <img class="card-img-top" [src]="i.img">
+    </a>
       <div class="card-body">
         <h5 class="card-title">{{ i.title }}</h5>
         <p class="card-text">{{ i.description.short}}</p>

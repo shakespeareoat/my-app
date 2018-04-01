@@ -30,6 +30,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   	this.http.get('assets/card.json').subscribe((data)=>{
   		this.cards = data;
+  		localStorage.setItem('cards', JSON.stringify(data));
   	});
   }
 
